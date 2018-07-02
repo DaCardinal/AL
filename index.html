@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <!--<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>-->
+        <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Raleway|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">-->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="assets/css/default.css" />
+        <link rel="stylesheet" href="assets/css/table.css" />
+        <link rel="stylesheet" href="assets/css/badger.css" />
+        <!--<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div class="row" style="margin-top:50px;">
+                <div class="container">
+                    <section class="col-md-12">
+                        
+                        <div class="card" style="zoom: 1;">
+                            <div class="card-header">
+                                <!--<h4 class="card-title">DOM / jQuery events</h4>-->
+                                <div class="badger-left badger-success badger-class" data-badger="Live Incidents">Displays incidents that happened today.</div>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Collapse</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="collapseExample" class="card-content collapse show">
+                                <div class="card-body card-dashboard">
+                                    <!--<p class="card-text">Displays incidents that happened today.</p>-->
+                                    <table id="incT1" class="table ttable" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-12">
+                        
+                    </section>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:80px;">
+                <div class="container">
+                    <section class="col-md-12">
+                        
+                        <div class="card" style="zoom: 1;">
+                            <div class="card-header">
+                                <div class="badger-left badger-warning badger-class" data-badger="Past Incidents">Displays incidents that occured in the past T-2weeks. </div>
+                                <div class="heading-elements">
+                                    <ul class="list-inline mb-0">
+                                        <li>
+                                            <a class="btn btn-default" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Collapse</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="collapseExample2" class="card-content collapse show">
+                                <div class="card-body card-dashboard">
+                                    <table id="incT2" class="table ttable" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-md-12">
+                        
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--<script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
+        <script src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js" type="text/javascript"></script>
+        <script src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/default.js" type="text/javascript"></script>
+    </body>
+</html>

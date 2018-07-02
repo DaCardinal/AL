@@ -1,0 +1,73 @@
+/* Some common styles..
+Warning! this first div styles can affect all your div styles! It is for demonstration purposes only!
+You can append this div's style to [class*="badger"] section if you want this style by default for all badgers
+------------------------- */
+
+div.badger-class {
+    margin: 10px 0px;
+    padding: 0px 0px 6px 110px;
+    background: #424242;
+    color: #fff;
+    line-height: 1.5em;
+    width:300px;
+    text-align: left;
+    /*border-radius: 6px;*/
+    /*box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .64)*/
+}
+
+/* Badger
+------------------------- */
+
+[class*="badger"] {
+    position: relative
+}
+
+[class*="badger"]:after {
+    content: attr(data-badger);
+    position: absolute;
+    top: 0;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #999;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.badger-left {
+    border-top-left-radius: 6px;
+}
+
+.badger-right {
+    border-top-right-radius: 6px;
+}
+
+.badger-left:after {
+    left: 0;
+    border-radius: 6px 0 6px 0;
+}
+
+.badger-right:after {
+    right: 0;
+    border-radius: 0 6px 0 6px
+}
+
+.badger-danger:after {
+    background: #d9534f
+}
+
+.badger-warning:after {
+    background: #f0ad4e
+}
+
+.badger-success:after {
+    background: #5cb85c
+}
+
+.badger-info:after {
+    background: #5bc0de
+}
+
+.badger-inverse:after {
+    background: #222
+}
