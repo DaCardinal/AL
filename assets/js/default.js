@@ -58,6 +58,7 @@ $(document).ready(function() {
         else {
             // Open this row
             row.child(format2("IncT3"+count)).show();
+            row.child().addClass('table-child');
             tr.addClass('shown');
             var newTable = $('#IncT3'+count).DataTable({
                 "ajax": "assets/data/data.json",
