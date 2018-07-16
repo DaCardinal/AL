@@ -111,6 +111,7 @@ def main():
     # item = t.search("Adam has a'")
     # print("{} ---- {}".format("Adam has a",output[item != None and item.isEndOfWord ]))
     print(t.hasPattenMatch("the"))
+    print(t.links)
  
 if __name__ == '__main__':
     main()
