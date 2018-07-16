@@ -74,13 +74,13 @@ def find_prefix(root, prefix):
 
 if __name__ == "__main__":
     root = TrieNode('*')
-    add(root, "hackathon is a okay")
-    add(root, 'hack')
-    add(root, "Adam has a' basketball")
-    add(root, "Adam has a' football")
-    add(root, "Maria has a car")
+    # add(root, "hackathon is a okay")
+    add(root, 'hammer')
+    # add(root, "Adam has a' basketball")
+    # add(root, "Adam has a' football")
+    # add(root, "Maria has a car")
 
-    print(find_prefix(root, 'hac'))
+    print(find_prefix(root, 'hammers'))
     # print(find_prefix(root, 'hack'))
     # print(find_prefix(root, 'hackathon'))
     # print(find_prefix(root, 'ha'))
